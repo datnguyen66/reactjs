@@ -91,8 +91,8 @@ export default function Header() {
           <NavLink className={classes.link} to="/todos">
             <Button color="inherit">Todo</Button>
           </NavLink>
-          <NavLink className={classes.link} to="/albums">
-            <Button color="inherit">Album</Button>
+          <NavLink className={classes.link} to="/products">
+            <Button color="inherit">Product</Button>
           </NavLink>
           {!isLoggedIn && (
             <Button color="inherit" onClick={handleClickOpen}>

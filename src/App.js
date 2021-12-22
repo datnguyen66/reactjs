@@ -10,11 +10,11 @@ import CounterFeatures from './features/Counter';
 import TodoFeature from './features/Todo';
 
 function App(props) {
-  useEffect(()=>{
-    const fetchProduct = async () =>{
+  useEffect(() => {
+    const fetchProduct = async () => {
       const productList = await productApi.getAll();
       console.log(productList);
-    }
+    };
     fetchProduct();
   }, []);
   return (
@@ -22,14 +22,13 @@ function App(props) {
       <Header />
 
       <Switch>
-        <Route path="/" component={ProductFeatures} exact/>
-        <Route path="/todos" component={TodoFeature}  />
-//         <Route path="/albums" component={AlbumFeatures} />
+        <Route path="/" component={ProductFeatures} exact />
+        <Route path="/todos" component={TodoFeature} />
         <Route path="/products" component={ProductFeatures} />
         <Route component={NotFound} />
       </Switch>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
