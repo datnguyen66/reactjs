@@ -109,8 +109,7 @@ function ListingPage(props) {
                             <Box className={classes.pagination}>
                                 <Pagination onChange={handlePageChange} color="primary" count={Math.ceil(pagination.total / pagination.limit)} page={pagination.page}></Pagination>
                             </Box>
-                        </Paper>
-                        
+                        </Paper>                        
                     </Grid>
                 </Grid>
             </Container>

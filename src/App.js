@@ -1,3 +1,4 @@
+import Footer from 'component/footer';
 import Header from 'component/header';
 import ProductFeatures from 'features/Product';
 import React, { useEffect } from 'react';
@@ -21,12 +22,14 @@ function App(props) {
       <Header />
 
       <Switch>
-        <Route path="/" component={CounterFeatures} exact/>
+        <Route path="/" component={ProductFeatures} exact/>
         <Route path="/todos" component={TodoFeature}  />
         <Route path="/albums" component={AlbumFeatures} />
         <Route path="/products" component={ProductFeatures} />
         <Route component={NotFound} />
       </Switch>
+
+      <Footer/>
     </div>
   );
 }
