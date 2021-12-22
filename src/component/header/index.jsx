@@ -95,14 +95,18 @@ export default function Header() {
             <Button color="inherit">Product</Button>
           </NavLink>
           {!isLoggedIn && (
-            <Button color="inherit" onClick={handleClickOpen}>
+            <>
+              <Button color="inherit" onClick={handleClickOpen}>
               Login
-            </Button>
+              </Button>
+            </>
           )}
           {isLoggedIn && (
-            <IconButton color="inherit" onClick={handleUserClick}>
+            <>
+              <IconButton color="inherit" onClick={handleUserClick}>
               <AccountCircle />
-            </IconButton>
+              </IconButton>
+            </>
           )}
         </Toolbar>
       </AppBar>
