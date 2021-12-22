@@ -24,7 +24,7 @@ function App(props) {
       <Switch>
         <Route path="/" component={ProductFeatures} exact/>
         <Route path="/todos" component={TodoFeature}  />
-        <Route path="/albums" component={AlbumFeatures} />
+//         <Route path="/albums" component={AlbumFeatures} />
         <Route path="/products" component={ProductFeatures} />
         <Route component={NotFound} />
       </Switch>
